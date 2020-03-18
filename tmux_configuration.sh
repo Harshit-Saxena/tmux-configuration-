@@ -2,13 +2,11 @@
 set -g default-terminal xterm-256color
 set -g status-keys vi
 
-
 # Prefix
 set-option -g prefix C-a
 unbind-key C-a
 bind-key C-a send-prefix
-set -g base-index 1
-
+set -g base-index 1 
 
 # Easy config reload
 bind-key r source-file ~/.tmux.conf \; display-message "tmux.conf reloaded."
@@ -26,7 +24,6 @@ set-option -g display-panes-time 3000
 # Automatically set window title
 set-window-option -g automatic-rename on
 set-option -g set-titles on
-
 
 # Key bindings for copy-paste
 setw -g mode-keys vi
